@@ -28,7 +28,7 @@
 
     // Cause Slider
     var causesSlider = new Swiper('.causes-slider', {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 30,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -158,6 +158,9 @@
         $('.portfolio-item:hidden').slice(0, 9).addClass('visible');
     });
 
+
+
+    
 
 
 })(jQuery);

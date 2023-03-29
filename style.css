@@ -421,7 +421,7 @@ a:hover, a:active {
 .btn {
     padding: 18px 40px;
     border: 2px solid #b90822;
-    border-radius: 24px;
+    border-radius: 50px;
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
@@ -448,6 +448,9 @@ a:hover, a:active {
     background: linear-gradient(270deg, rgb(102, 206, 250) 0%, rgb(11, 110, 165) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448EF8', endColorstr='#0e3ca2',GradientType=1 ); /* ie6-9 */
     color: #fff;
+}
+.btn.orange-border:hover{
+    background: linear-gradient(270deg, rgb(102, 206, 250) 0%, rgb(11, 110, 165) 100%) !important; /* w3c */
 }
 
 /*
@@ -2130,4 +2133,75 @@ ul.tabs-nav .tab-nav.active {
     color: #7b7b7b;
     background: #131212;
     text-align: center;
+}
+
+/* Ashish */
+@media only screen and (max-width: 600px) {
+   .features-main{
+    margin-top:-60px;
+   }
+   .few-videos-heading{
+    padding-left:20px;
+   }
+   .entry-title-mobile{
+    font-size: 25px !important;
+   }
+   .home-page-limestone {
+    padding: 40px 0;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .home-page-welcome{
+        padding: 50px 0px;
+    }
+    .mobile-txt{
+        font-size: 18px !important;
+    }
+    .get-in-touch{
+        font-size: 30px !important;
+    }
+    .entry-title{
+        font-size: 30px;
+    }
+    header.site-header{
+        margin-top:-42px;
+    }
+    /* .top-bar-main{
+        height: 48px;
+    } */
+    .skiptranslate span{
+        margin-top: -36px;
+        padding-left: 26px;
+    }
+    top-bar-main{
+        padding-top: 5px;
+    }
+  }
+
+
+
+  .footer-logo{
+    display: flex;
+    justify-content: center;
+}
+a.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+    background: transparent;
+}
+.goog-te-combo{
+    padding:10px
+}
+body > .skiptranslate {
+	display: none;
+}
+.skiptranslate{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+top-bar-main{
+    background: wheat;
+
 }

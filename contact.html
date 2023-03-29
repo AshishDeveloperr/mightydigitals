@@ -40,9 +40,9 @@
                     </div> --><!-- .header-bar-text -->
                 </div><!-- .col -->
 
-                <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center top-bar-main">
                     <div class="donate-btn">
-                        <a href="#">Select Language</a>
+                        <span id="google_translate_element"></span>
                     </div><!-- .donate-btn -->
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -95,9 +95,9 @@
             <div class="row">
                 <div class="col-12 col-lg-5">
                     <div class="entry-content">
-                        <h2>Get In touch with us</h2>
+                        <h2 class="get-in-touch">Get In touch with us</h2>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, conse ctetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accu msan sodales odio, id tempus velit ullamc.</p>
+                        <p class="mobile-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, conse ctetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accu msan sodales odio, id tempus velit ullamc.</p>
 
                         <ul class="contact-social d-flex flex-wrap align-items-center">
                             <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
@@ -109,9 +109,9 @@
                         </ul>
 
                         <ul class="contact-info p-0">
-                            <li><i class="fa fa-phone"></i><span>+45 677 8993000 223</span></li>
-                            <li><i class="fa fa-envelope"></i><span>office@template.com</span></li>
-                            <li><i class="fa fa-map-marker"></i><span>Main Str. no 45-46, b3, 56832, Los Angeles, CA</span></li>
+                            <li><i class="fa fa-phone"></i><span class="mobile-txt">+45 677 8993000 223</span></li>
+                            <li><i class="fa fa-envelope"></i><span class="mobile-txt">office@template.com</span></li>
+                            <li><i class="fa fa-map-marker"></i><span class="mobile-txt">Main Str. no 45-46, b3, 56832, Los Angeles, CA</span></li>
                         </ul>
                     </div>
                 </div><!-- .col -->
@@ -120,7 +120,7 @@
                     <form class="contact-form">
                         <input type="text" placeholder="Name">
                         <input type="email" placeholder="Email">
-                        <textarea rows="15" cols="6" placeholder="Messages"></textarea>
+                        <textarea rows="15" cols="6" placeholder="Messages" style="height: 110px"></textarea>
 
                         <span>
                             <input class="btn gradient-bg" type="submit" value="Contact us">
@@ -135,21 +135,21 @@
     <footer class="site-footer">
         <div class="footer-widgets">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
+                <div class="row" style="align-items: center">
+                    <div class="col-12 col-md-12 col-lg-12">
                         <div class="foot-about">
-                            <h2><a class="foot-logo" href="https://voiceofvijaya.in/"><img src="images/logo4_white.png" alt=""></a></h2>
+                            <h2 class="footer-logo"><a class="foot-logo" href="https://voiceofvijaya.in/"><img src="images/logo4_white.png" alt=""></a></h2>
 
                             <!-- <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Mauris temp us vestib ulum mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.Lorem ipsum dolo.</p> -->
 
-                            <ul class="d-flex flex-wrap align-items-center">
+                            <!-- <ul class="d-flex flex-wrap align-items-center">
                                 <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-behance"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
+                            </ul> -->
                         </div><!-- .foot-about -->
                     </div><!-- .col -->
 
@@ -181,6 +181,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
     <script type='text/javascript' src='js/jquery.barfiller.js'></script>
     <script type='text/javascript' src='js/custom.js'></script>
+
+    <!-- google-translate-script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            document.getElementById(":0.targetLanguage").style.display = "none"; 
+        </script>
 
 </body>
 </html>
