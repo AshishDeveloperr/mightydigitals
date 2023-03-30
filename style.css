@@ -2178,6 +2178,9 @@ ul.tabs-nav .tab-nav.active {
     .swiper-button-next{
         visibility: visible !important;
     }
+    .cause-wrap > iframe{
+        width:380px !important;
+    }
   }
 
 
