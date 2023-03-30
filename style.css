@@ -1098,7 +1098,7 @@ ul.tabs-nav .tab-nav.active {
 @media screen and (max-width: 576px){
     .our-causes .swiper-button-next,
     .our-causes .swiper-button-prev {
-        display: none;
+        width: 65px;
     }
 }
 
